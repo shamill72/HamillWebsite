@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Shane Hamill</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link href="Content/Site.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hello, I'm <br /><span>Shane Hamill</span></h2>
+            <h3>Web Developer.</h3>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+            <div><img src="images/IMG_4110.jpg" class="circle-img" /></div>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>I'm a Web Developer</h3>
+                <p class="pwhite">I have loved programming for as long as I can remember. I started playing around with databases in my touring days in the live music industry. I used FileMaker Pro to create my own advance-style database to keep track of each show, venue and promoter that I needed to coordinate logistics. This started my love of the power of databases. I eventually taught myself PHP and learned how to design websites to create a front-end to interact with promoters to start our advance work discussions, while connecting to my FileMaker Pro database on the backend (hosted on an old computer I had lying around that I turned into an Apache Server). This eventually lead me to want to learn more about programming. I completed my Associates in Applied Science in Computer Information Technologies with a degree in Programming from Volunteer State Community College. Through this process I further developed my passion in Full-Stack Development. I am fluent in HTML, CSS, Javascript, C#, C++, .NET, Python, SQL, Access and MySQL. After a 30 year career in the live music industry, I am ready to start a new journey in programming.</p>
+                <p class="pwhite">My hobbies are camping and hiking. I am a father to two amazing, grown young men who are both starting their own career paths. I have been married to an amazing, strong woman for the last twenty-four years. We are also parents to two rescue dogs, Leo and Sasha. I couldn’t make this career change without the support of this incredible family!</p>
+            </div>
+            <div class="w50">
+                <img src="images/Front-end-Development.jpeg" class="image" style="padding: 20px"/>
+            </div>
+        </div>
+    </section>
+    <section class="work" id="work">
+        <div class="heading white">
+            <h2>My Latest Work</h2>
+        </div>
+        <br />
+        <br />
+        <hr />
+        <div class="heading white"><h3>Report Website - Blog Style</h3></div>
+        <div class="heading white"><h4>using ASP.NET/Javascript/CSS/SQL</h4></div>
+        <div class="content">
+            <div class="workBx">
+                <img src="images/Screen7.png" />
+            </div><div class="workBx heading white"><p class="project">This project was my Capstone project. We were put on teams of four and we were to work for a company that acquired several failing branches and we had to create a website and a Windows Form app to track reports. I took the task of the website and built it in ASP.NET using SQL as th database to store and retrieve the reports.</p></div>
+            <div class="workBx">
+                <img src="images/Screen5.png" />
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="heading white"><h3>Daily Journal Entry - Blog Style</h3></div>
+        <div class="heading white"><h4>Using Node.js and MongoDB</h4></div>
+        <div class="content">
+            <div class="workBx">
+                <a href="https://sleepy-ocean-79700.herokuapp.com/"><img src="images/Screen11.png" /></a>
+            </div>
+            <div class="workBx heading white"><p class="project">This was a project from the Udemy Bootcamp for Web Development. This was built using Node.js and MongoDB. This is a good example of non-relational database use.</p></div>
+            <div class="workBx">
+                <a href="https://sleepy-ocean-79700.herokuapp.com/"><img src="images/Screen10.png" /></a>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="heading white"><h3>Note Keeper App</h3></div>
+        <div class="heading white"><h4>Using React</h4></div>
+        <div class="content">
+            <div class="workBx">
+            <img src="images/Screen9.png" />
+            </div>
+            <div class="workBx heading white"><p class="project">This was a project from the Udemy Bootcamp for Web Development. This was build using React.js. This app was a good example of using React on the client-side. My next step is to connect this to a MongoDB to utilize the CRUD functionality of the database instead of the client-side.</p></div>
+            <div class="workBx">
+                <img src="images/Screen9.png" />
+            </div>
+        </div>
+        <br />
+        <br />
+
+        <hr />
+        <br />
+        <br />
+        <div class="heading white"><h3>Windows Form Application - Inventory Database</h3></div>
+        <div class="heading white"><h4>Using MySQL</h4></div>
+        <div class="content">
+            <div class="workBx">
+                <img src="images/Screen1.png" />
+            </div>
+            <div class="workBx heading white"><p class="project">This was a project I worked on in school in my Programming II class. This is a Windows Form Application, built using Visual Studio using C# on the backend and MySQL database. We could create any basic application we wanted to, but I decided to go the extra mile and create a rental inventory database that could be used to create quotes and orders. This is was a good example of relational database useage.</p></div>
+            <div class="workBx">
+                <img src="images/Screen3.png" />
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="heading white"><h4>More to come...</h4></div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <img src="images/envelope.png" style="width: 30px;" />
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p><a href="mailto:hamilldesigns.web@gmail.com">hamilldesigns.web@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="box">
+                        <div class="icon">
+                            <img src="images/linkedin.png" style="width: 30px;" />
+                            <div class="text">
+                                <h3>LinkedIn</h3>
+                                <a href="https://www.linkedin.com/in/shane-d-hamill">Shane Hamill</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form action="MAILTO:shane.d.hamill@gmail.com?subject=Mail_form_message&body=Message" method="GET" enctype="multipart/form-data" name="EmailForm">
+                    <h3>Message Me</h3>
+                    <input placeholder="Full Name" typeof="text" name="name"/>
+                    <input placeholder="Email" typeof="email" name="email"/>
+                    <textarea placeholder="Your message" typeof="text" name="message" value="Message"></textarea>
+                    <br />
+                    <input type="submit" value="send" />
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 450);
+        });
+    </script>
+</body>
+</html>

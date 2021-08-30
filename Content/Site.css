@@ -1,0 +1,348 @@
+﻿
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Set padding to display errors that occur during databinding */
+.padding-error {
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .nofloat {
+        float: none;
+        padding: 10px 15px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap') {
+    margin: 0,
+    box-sizing: border-box,
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    padding: 100px;
+}
+
+p.pwhite {
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: #000;
+    background-image: url('../images/bannerImage.png');
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn {
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 40px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    color:#fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header.sticky .logo {
+        color: #111;
+    }
+
+header ul {
+        position: relative;
+        display: flex;
+    }
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header.sticky ul li a {
+    color: #111;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.heading.white {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.heading h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentBx {
+    padding-right: 30px;
+}
+
+.contentBx h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.w50 {
+    min-width: 50%;
+}
+
+.image {
+    min-width: 100%;
+}
+
+.circle-img {
+    border-radius: 50%;
+    border: 7px solid #fff;
+    width: 120px;
+    height: 145px;
+  }
+
+.work {
+    background-color: #000;
+}
+
+.work .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+
+.work .content .workBx {
+    width: 33%;
+    padding: 20px;
+    text-align: center;
+}
+
+.work .content .workBx .left {
+    text-align: right;
+}
+
+.contactInfo h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.contactInfoBx {
+    display: inline;
+    align-content: flex-start;
+}
+
+.contactInfoBx .box .icon {
+    min-width: 40px;
+    padding-top: 4px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 24px;
+}
+
+.contactInfoBx .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #000;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactInfoBx .box .text h3 {
+    font-weight: 500;
+    color: #2196f3;
+    margin-bottom: 0;
+}
+
+.text h3 {
+    font-weight: 700;
+}
+
+.formBx {
+    min-width: 60%;
+}
+
+.formBx form {
+    display: flex;
+    flex-direction: column;
+}
+
+    .formBx form input,
+    .formBx form textarea {
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: transparent;
+        font-size: 16px;
+        border: solid;
+        border-width: 1px;
+        outline: none;
+        resize: none;
+        max-width: 80%;
+    }
+
+.formBx form textarea {
+    min-height: 200px;
+}
+
+.formBx form input[type="submit"] {
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+/*Responsive*/
+@media (max-width: 991px)
+{
+    header, header.sticky {
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+    .menu {
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 1000;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+
+    .menu.active {
+        left: 0;
+    }
+    header ul li a {
+        filter: invert(-1);
+        font-size: 24px;
+        margin: 10px;
+    }
+ 
+    section {
+        padding: 100px 50px;
+    }
+    .banner {
+        padding: 150px 50px 100px;
+        background-position: right;
+        background-position-x: 1400px;
+    }
+    .banner h2 {
+        font-size: 1.5em;
+    }
+    .banner h3 {
+        font-size: 1em;
+    }
+    .btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .heading h2 {
+        font-size: 24px;
+    }
+    .project {
+    width: 33%;
+    padding: 20px;
+    text-align: center;
+    }
+}
