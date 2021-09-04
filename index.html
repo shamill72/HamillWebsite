@@ -11,7 +11,7 @@
 <body>
     <header>
         <a href="#" class="logo">Portfolio</a>
-        <div class="toggle" onclick="toggleMenu();"></div>
+        <div class="toggle sticky" onclick="toggleMenu();"></div>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -19,44 +19,51 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
-    <section class="banner" id="home">
-        <div class="textBx">
+    <section class="banner row" id="home">
+        <div class="textBx col-6">
             <h2>Hello, I'm <br /><span>Shane Hamill</span></h2>
             <h3>Web Developer.</h3>
             <a href="#about" class="btn">About Me</a>
         </div>
-    </section>
-    <section class="about" id="about">
-        <div class="heading">
-            <h2>About Me</h2>
-            <div><img src="images/IMG_4110.jpg" class="circle-img" /></div>
+        <div class="col-6">
+            <div class="container">
+            <img src="images/WebPhoto.jpg" class="banner-image" />
+            <div class="block"></div>
+            </div>
         </div>
-        <div class="content">
-            <div class="contentBx w50">
+    </section>
+    <section class="about row" id="about">
+        <div class="heading col-12">
+            <h2>About Me</h2>
+            <div class="col-12"><img src="images/IMG_4110.jpg" class="circle-img" /></div>
+        </div>
+        <div class="content row">
+            <div class="contentBx col-xl-6 col-12">
                 <h3>I'm a Web Developer</h3>
                 <p class="pwhite">I have loved programming for as long as I can remember. I started playing around with databases in my touring days in the live music industry. I used FileMaker Pro to create my own advance-style database to keep track of each show, venue and promoter that I needed to coordinate logistics. This started my love of the power of databases. I eventually taught myself PHP and learned how to design websites to create a front-end to interact with promoters to start our advance work discussions, while connecting to my FileMaker Pro database on the backend (hosted on an old computer I had lying around that I turned into an Apache Server). This eventually lead me to want to learn more about programming. I completed my Associates in Applied Science in Computer Information Technologies with a degree in Programming from Volunteer State Community College. Through this process I further developed my passion in Full-Stack Development. I am fluent in HTML, CSS, Javascript, C#, C++, .NET, Python, SQL, Access and MySQL. After a 30 year career in the live music industry, I am ready to start a new journey in programming.</p>
                 <p class="pwhite">My hobbies are camping and hiking. I am a father to two amazing, grown young men who are both starting their own career paths. I have been married to an amazing, strong woman for the last twenty-four years. We are also parents to two rescue dogs, Leo and Sasha. I couldn’t make this career change without the support of this incredible family!</p>
             </div>
-            <div class="w50">
-                <img src="images/Front-end-Development.jpeg" class="image" style="padding: 20px"/>
+            <div class="about-image-div col-xl-6 col-12">
+                <img src="images/Front-end-Development.jpeg" class="about-image" />
             </div>
         </div>
     </section>
-    <section class="work" id="work">
-        <div class="heading white">
+    <section class="work row" id="work">
+        <div class="heading white col-12">
             <h2>My Latest Work</h2>
         </div>
         <br />
         <br />
         <hr />
-        <div class="heading white"><h3>Report Website - Blog Style</h3></div>
-        <div class="heading white"><h4>using ASP.NET/Javascript/CSS/SQL</h4></div>
-        <div class="content">
+        <div class="heading white col-12"><h3>Report Website - Blog Style</h3></div>
+        <div class="heading white col-12"><h4>using ASP.NET/Javascript/CSS/SQL</h4></div>
+        <div class="content row">
             <div class="workBx">
-                <img src="images/Screen7.png" />
-            </div><div class="workBx heading white"><p class="project">This project was my Capstone project. We were put on teams of four and we were to work for a company that acquired several failing branches and we had to create a website and a Windows Form app to track reports. I took the task of the website and built it in ASP.NET using SQL as th database to store and retrieve the reports.</p></div>
+                <img src="images/Screen7.png" class="project-image" />
+            </div>
+            <div class="workBx heading white"><p class="project">This project was my Capstone project. We were put on teams of four and we were to work for a company that acquired several failing branches and we had to create a website and a Windows Form app to track reports. I took the task of the website and built it in ASP.NET using SQL as th database to store and retrieve the reports.</p></div>
             <div class="workBx">
-                <img src="images/Screen5.png" />
+                <img src="images/Screen5.png" class="project-image" />
             </div>
         </div>
         <br />
@@ -65,11 +72,24 @@
         <div class="heading white"><h4>Using Node.js and MongoDB</h4></div>
         <div class="content">
             <div class="workBx">
-                <a href="https://sleepy-ocean-79700.herokuapp.com/"><img src="images/Screen11.png" /></a>
+                <a href="https://sleepy-ocean-79700.herokuapp.com/"><img src="images/Screen11.png" class="project-image" /></a>
             </div>
             <div class="workBx heading white"><p class="project">This was a project from the Udemy Bootcamp for Web Development. This was built using Node.js and MongoDB. This is a good example of non-relational database use.</p></div>
             <div class="workBx">
-                <a href="https://sleepy-ocean-79700.herokuapp.com/"><img src="images/Screen10.png" /></a>
+                <a href="https://sleepy-ocean-79700.herokuapp.com/"><img src="images/Screen10.png" class="project-image" /></a>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="heading white"><h3>Crown Clothing Store</h3></div>
+        <div class="heading white"><h4>Using Node.js and React</h4></div>
+        <div class="content">
+            <div class="workBx">
+                <a href="https://shamill72.github.io/crwn-clothing/"><img src="images/ScreenShot12.png" class="project-image" /></a>
+            </div>
+            <div class="workBx heading white"><p class="project">This was a project from the Udemy Bootcamp called Complete React Developer 2021. This was built using Node.js and React. This app used ajavscript objects instead of a database.</p></div>
+            <div class="workBx">
+                <a href="https://shamill72.github.io/crwn-clothing/"><img src="images/ScreenShot13.png" class="project-image" /></a>
             </div>
         </div>
         <br />
@@ -78,11 +98,11 @@
         <div class="heading white"><h4>Using React</h4></div>
         <div class="content">
             <div class="workBx">
-            <img src="images/Screen9.png" />
+            <img src="images/Screen9.png" class="project-image" />
             </div>
             <div class="workBx heading white"><p class="project">This was a project from the Udemy Bootcamp for Web Development. This was build using React.js. This app was a good example of using React on the client-side. My next step is to connect this to a MongoDB to utilize the CRUD functionality of the database instead of the client-side.</p></div>
             <div class="workBx">
-                <img src="images/Screen9.png" />
+                <img src="images/Screen9.png" class="project-image" />
             </div>
         </div>
         <br />
@@ -95,11 +115,11 @@
         <div class="heading white"><h4>Using MySQL</h4></div>
         <div class="content">
             <div class="workBx">
-                <img src="images/Screen1.png" />
+                <img src="images/Screen1.png" class="project-image" />
             </div>
             <div class="workBx heading white"><p class="project">This was a project I worked on in school in my Programming II class. This is a Windows Form Application, built using Visual Studio using C# on the backend and MySQL database. We could create any basic application we wanted to, but I decided to go the extra mile and create a rental inventory database that could be used to create quotes and orders. This is was a good example of relational database useage.</p></div>
             <div class="workBx">
-                <img src="images/Screen3.png" />
+                <img src="images/Screen3.png" class="project-image" />
             </div>
         </div>
         <br />
@@ -137,17 +157,20 @@
                 </div>
             </div>
             <div class="formBx">
-                <form action="MAILTO:shane.d.hamill@gmail.com?subject=Mail_form_message&body=Message" method="GET" enctype="multipart/form-data" name="EmailForm">
+                <form action="https://formspree.io/f/mwkaandv" method="POST" id="email-form">
                     <h3>Message Me</h3>
-                    <input placeholder="Full Name" typeof="text" name="name"/>
-                    <input placeholder="Email" typeof="email" name="email"/>
-                    <textarea placeholder="Your message" typeof="text" name="message" value="Message"></textarea>
+                    <input type="hidden" name="subject" value="Website form email" />
+                    <input placeholder="Full Name" typeof="text" name="name"value="" />
+                    <input placeholder="Email" typeof="email" name="email" value=""/>
+                    <textarea placeholder="Your message" typeof="text" name="body" value="Message"></textarea>
                     <br />
-                    <input type="submit" value="send" />
+                    <input type="submit" class="btn">
                 </form>
+                <div id="status"></div>
             </div>
         </div>
     </section>
+    <script src="Scripts/main.js"></script>
     <script type="text/javascript">
         window.addEventListener('scroll', function () {
             var header = document.querySelector('header');
