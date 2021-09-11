@@ -42,6 +42,7 @@ section {
     padding: 100px;
 }
 
+
 p.pwhite {
     font-size: 1em;
     color: #000;
@@ -107,6 +108,7 @@ p.pwhite {
 .about-image-div {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
     margin-top: 20px;
 }
@@ -175,6 +177,11 @@ header ul li a {
     text-decoration: none;
 }
 
+header ul li a:hover {
+    text-decoration: none;
+    color: #2196f3;
+}
+
 header.sticky ul li a {
     color: #111;
 }
@@ -195,6 +202,13 @@ header.sticky ul li a {
 .heading h2 {
     font-weight: 600;
     font-size: 30px;
+}
+
+.work .heading .white h4 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .content {
     display: flex;
@@ -244,6 +258,15 @@ header.sticky ul li a {
     padding: 20px;
     text-align: center;
     align-content: space-between;
+}
+
+.work .content .workBx img {
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+}
+
+.work .content .workBx img:hover { 
+    transform: scale(1.05);
 }
 
 .work .content .workBx .left {
