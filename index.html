@@ -7,6 +7,23 @@
     <script src="Scripts/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <link href="Content/Site.css" rel="stylesheet" />
+    <script type="text/javascript">
+    var images = ["images/Front-end-Development.jpeg", "images/FullStack.png", "images/aspnet-development-services.png"];
+    $(function () {
+        var i = 0;
+        $("#divImage").css("background-image", "url(" + images[i] + ")");
+        setInterval(function () {
+            i++;
+            if (i == images.length) {
+                i = 0;
+            }
+            $("#divImage").fadeOut("slow", function () {
+                $(this).css("background-image", "url(" + images[i] + ") ");
+                $(this).fadeIn("slow");
+            });
+        }, 3000);
+    });
+    </script>
 </head>
 <body>
     <header>
@@ -44,7 +61,7 @@
                 <p class="pwhite">My hobbies are camping and hiking. I am a father to two amazing, grown young men who are both starting their own career paths. I have been married to an amazing, strong woman for the last twenty-four years. We are also parents to two rescue dogs, Leo and Sasha. I couldn’t make this career change without the support of this incredible family!</p>
             </div>
             <div class="about-image-div col-xl-6 col-12">
-                <img src="images/Front-end-Development.jpeg" class="about-image"/>
+                <div id="divImage" class="about-image"></div>
             </div>
         </div>
     </section>
