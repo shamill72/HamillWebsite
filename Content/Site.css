@@ -82,8 +82,9 @@ p.pwhite {
 
 
 .banner-image {
-    width: 150px;
+    width: 400px;
     height: 241px;
+    border-radius: 45px 5px;
 }
 
 .container {
