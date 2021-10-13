@@ -227,6 +227,22 @@ header.sticky ul li a {
 
 .project-image {
     max-width: 100%;
+    width: 301px;
+    height: 211px;
+    margin: 0px 0px 0px 0px;
+}
+
+.project-image-1 {
+    width: 301px;
+    height: 211px;
+    object-fit: cover;
+}
+
+.project-image-2 {
+    width: 301px;
+    height: 211px;
+    object-fit: cover;
+    object-position: 20% 10%;
 }
 
 .w50 {
@@ -497,8 +513,6 @@ header.sticky ul li a {
     
     .work .content .workBx {
         display: inline-block;
-        height: 100%;
-        width: 33%;
         padding: 10px;
         text-align: center;
         vertical-align: middle;
@@ -507,5 +521,6 @@ header.sticky ul li a {
     .work .content .workBx img {
         display: inline-block;
         vertical-align: middle;
+
     }
 }
